@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de texto</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            display: block;
+            width: 450px;
+            margin: 33px auto;
+            padding: 23px 18px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px #bebebe,
+                        0 0 10px #bebebe,
+                        0 0 12px #bebebe;
+            
+            text-wrap: wrap;
+        }
+
+        h1{
+            font-size: 2.2em;
+            text-align: center;
+            letter-spacing: 6px;
+        }
+
+        p{
+            text-align: justify;
+            margin-block: 22px;
+            text-indent: 20px;
+            line-height: 1.5;
+        }
+
+        p.link{
+            text-align: right;
+            text-transform: capitalize;
+        }
+
+        p.link > a{
+            text-decoration-line: underline;
+            text-decoration-color: #bebebe;
+            text-decoration-style: solid;
+            text-decoration-thickness: 2px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Titulo da pagina</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, saepe nihil. Excepturi repellat omnis nulla tempora vel neque distinctio ut quam veritatis id rem, dolore voluptas assumenda voluptatibus eaque beatae?
+        </p>
+
+        <p class="link">Este exemplo pelo site da <a href="https://www.w3schools.com/css/css_text_decoration.asp" target="_blank">W3Schools</a></p>
+    </main>
+</body>
+</html>
