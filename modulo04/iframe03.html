@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+
+        a{
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 12px;
+            background-color: #ff4827;
+            margin-right: 18px;
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        iframe{
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+            height: 300px;
+            border: 2px solid #000;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pagina com links de iframes</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto aperiam minus delectus provident dolorum consectetur autem veritatis aspernatur ipsum excepturi obcaecati est, hic pariatur quo, quos doloribus qui! Ipsum.
+    </p>
+
+    <a href="pagina_extras/pagina01.html" target="paginas">Pagina 01</a>
+    <a href="pagina_extras/pagina02.html" target="paginas">Pagina 02</a>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus molestias voluptas officia quis, tempore sit explicabo! Nam quo quisquam, sint soluta veniam, ducimus asperiores repellat optio, velit ea aut.
+        Voluptatem quia molestias mollitia molestiae quibusdam blanditiis excepturi incidunt. Eligendi quis est quam optio quisquam nam sequi minima soluta a quod ex at distinctio, consectetur voluptatibus culpa dolores mollitia eveniet.
+        Vero voluptate nemo dolore quia pariatur quidem, quasi, excepturi accusamus magni explicabo ea nihil, ipsum necessitatibus quos id porro tenetur distinctio enim eligendi ratione minima placeat ipsam labore expedita? Quis.
+    </p>
+
+    <iframe name="paginas" frameborder="0" srcdoc="<h1>Este e um iframe</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum cupiditate error illo dolore nihil optio numquam corrupti mollitia. Error nobis repellat eos explicabo sed aut dolorem dolorum beatae fugiat?
+        Nisi autem officia doloribus beatae vero, obcaecati at iusto exercitationem, saepe porro dignissimos. Cupiditate delectus voluptates asperiores, nesciunt, neque voluptas cum nostrum eveniet iure consequatur sunt sint ad dolor alias!</p>">
+        <p>seu navegador não e compativel com iframes</p>
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cum cupiditate error illo dolore nihil optio numquam corrupti mollitia. Error nobis repellat eos explicabo sed aut dolorem dolorum beatae fugiat?
+        Nisi autem officia doloribus beatae vero, obcaecati at iusto exercitationem, saepe porro dignissimos. Cupiditate delectus voluptates asperiores, nesciunt, neque voluptas cum nostrum eveniet iure consequatur sunt sint ad dolor alias!
+    </p>
+</body>
+</html>
