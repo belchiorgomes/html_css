@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/90bbb72460.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
     <title>Media query</title>
 </head>
-<body>
+<body onresize="tamanhoTela()">
     <header>
         <h1>Meu Site</h1>
 
@@ -42,6 +43,15 @@
     </main>
 
     <script>
+        function tamanhoTela(){
+            if(window.innerWidth >= 768){
+                menuLista.style.display = 'block'
+            }
+            else{
+                menuLista.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if(menuLista.style.display == 'block'){
                 menuLista.style.display = 'none'
