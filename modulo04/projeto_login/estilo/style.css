@@ -30,9 +30,10 @@ section#login{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px #390047;
+    transition: all .3s ease;
 }
 
-section#login > div#imagem, div#formulario{
+section#login > div#imagem div#formulario{
     display: block;
 }
 
