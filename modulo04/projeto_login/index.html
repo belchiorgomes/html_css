@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90bbb72460.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/mediaquery.css">
     <title>Tela de Login</title>
@@ -16,16 +17,21 @@
                 <p>Seja bem-vindo, faça login na sua conta, para fazer as suas configurações iniciais!</p>
             </div>
 
-            <form action="login.php" method="post">
+            <form action="login.php" method="post" autocomplete="on">
                 <div class="campo">
-                    <input type="email" name="email" id="email" placeholder="seu e-mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
                     <label for="email">Email:</label>
                 </div>
 
-                <div class="campo">                
-                    <input type="password" name="senha" id="senha" placeholder="sua senha">
+                <div class="campo">   
+                    <i class="fa-solid fa-lock"></i>             
+                    <input type="password" name="senha" id="senha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
                     <label for="senha">Senha:</label>
                 </div>
+
+                <input type="submit" value="Enviar">
+                <a href="#">Esqueci a senha</a>
             </form>
         </section>
     </main>
