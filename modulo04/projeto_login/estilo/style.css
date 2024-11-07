@@ -56,3 +56,69 @@ section#login > div#formulario > h1{
 section#login > div#formulario > p{
     font-size: 0.8em;
 }
+
+section#login > div#formulario > form .campo{
+    position: relative;
+    width: 100%;
+    background-color: #e689fd;
+    margin-block: 10px;
+    padding-block: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+section#login > div#formulario > form .campo label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background-color: #390047;
+
+}
+
+section#login > div#formulario > form .campo label i{
+    display: block;
+    color: white;
+    font-size: 1.2em;
+}
+
+section#login > div#formulario > form .campo input{
+    display: block;
+    margin-left: 26%;
+    width: 100%;
+    border: none;
+    background-color: #e689fd;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+section#login > div#formulario > form .campo input::placeholder{
+    color: white;
+}
+
+section#login > div#formulario > form input[type="submit"]{
+    width: 100%;
+    padding-block: 8px;
+    background-color: #390047;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+section#login > div#formulario > form a{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-block: 8px;
+    color: #390047;
+}
