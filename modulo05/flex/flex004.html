@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: var(--justify);
+            gap: 8px;
+            margin-block-end: 10px;
+            border-radius: 8px;
+        }
+
+        .box{
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 8px;
+            background-color: orange;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="--justify:flex-start">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="container" style="--justify:flex-end">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="container" style="--justify:center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="container" style="--justify:space-between">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="container" style="--justify:space-around">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <div class="container" style="--justify:space-evenly">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
