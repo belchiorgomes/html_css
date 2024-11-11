@@ -7,10 +7,12 @@
     <style>
         .container{
             background-color: antiquewhite;
+            height: 100px;
             padding: 10px;
             display: flex;
             flex-flow: row wrap;
             justify-content: var(--justify);
+            align-items: var(--align);
             gap: 8px;
             margin-block-end: 10px;
             border-radius: 8px;
@@ -30,32 +32,32 @@
     </style>
 </head>
 <body>
-    <div class="container" style="--justify:flex-start">
+    <div class="container" style="--justify:flex-start; --align:flex-start">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
     </div>
-    <div class="container" style="--justify:flex-end">
+    <div class="container" style="--justify:flex-end; --align:flex-end">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
     </div>
-    <div class="container" style="--justify:center">
+    <div class="container" style="--justify:center; --align:center">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
     </div>
-    <div class="container" style="--justify:space-between">
+    <div class="container" style="--justify:space-between; --align:baseline">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
     </div>
-    <div class="container" style="--justify:space-around">
+    <div class="container" style="--justify:space-around; --align:flex-start">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
     </div>
-    <div class="container" style="--justify:space-evenly">
+    <div class="container" style="--justify:space-evenly; --align:flex-start;">
         <div class="box">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
