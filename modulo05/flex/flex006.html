@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicico com Flex Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        main header{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        main header ul{
+            list-style-type: none;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 8px;
+        }
+
+        main header ul li{
+            flex: 1 1 100%;
+        }
+
+        main header ul li a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bolder;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Exercicio Flex</h1>
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+                <li><a href="#">opção 5</a></li>
+                <li><a href="#">opção 6</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <h2>
+                Flex-Box
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In omnis distinctio consequatur nesciunt consequuntur repellendus voluptate architecto amet aut quibusdam nulla illo odit doloremque, hic commodi! Sint est possimus ab?
+                Aspernatur repellat magni, nisi cupiditate tenetur optio veritatis dolorem saepe iure, fuga atque alias laudantium id fugiat ducimus expedita ipsa quos. Minus delectus minima deserunt, id libero odio praesentium earum.
+                Dicta dignissimos iure nihil. Aut, illum. Reprehenderit, nihil ipsa. Non quidem fugit dolor consequatur ducimus libero animi molestias, eos suscipit excepturi cum deleniti quisquam rerum maiores fugiat veniam placeat earum.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
