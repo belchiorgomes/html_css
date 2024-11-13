@@ -18,6 +18,7 @@
         main{
             background-color: antiquewhite;
             padding: 10px;
+            height: 100vh;
         }
 
         main header{
@@ -26,6 +27,7 @@
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
+            transition: all .6s ease;
         }
 
         main header ul{
@@ -48,6 +50,25 @@
             color: white;
             font-weight: bolder;
             background-color: black;
+        }
+
+        main section{
+            margin-block: 10px;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        @media screen and (min-width: 560px){
+            main header{
+                flex-flow: row wrap;
+                justify-content: space-between;
+                gap: 10px 40px;
+            }
+
+            main header ul{
+                flex-flow: row nowrap;
+            }
         }
     </style>
 </head>
